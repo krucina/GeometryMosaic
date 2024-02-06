@@ -7,7 +7,7 @@ export class Canvas {
     }
 
     adjustCanvasSize() {
-        const padding = 70; // Definujeme padding
+        const padding = 20; // Definujeme padding
         const maxWidth = window.innerWidth - padding;
         const maxHeight = window.innerHeight - padding;
 

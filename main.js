@@ -1,6 +1,9 @@
 import { Canvas } from './Canvas.js';
+import { TileManager } from './TileManager.js';
+import { UIController } from './UIController.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = new Canvas('myCanvas'); // ID vašeho HTML canvas elementu
-    // Další kód pro inicializaci a správu aplikace
+    const tileManager = new TileManager();
+    const uiController = new UIController(tileManager);
 });

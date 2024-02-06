@@ -48,11 +48,20 @@ body, html {
     position: relative; /* Pro umístění dalších vzorů */
 }
 
+.tile-miniature {
+    width: 30px; /* Menší rozměry pro miniatury */
+    height: 30px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 5px;
+}
+
 
 #myCanvas {
     display: block; /* Odstraní defaultní margin pro inline elementy */
     background-color: white;
     border: 2px solid #ccc;
+    margin-top: 20px;
     /* Dynamické rozměry budou nastaveny pomocí JavaScriptu */
 }
 
