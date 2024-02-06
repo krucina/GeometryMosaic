@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Název Projektu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <canvas id="myCanvas"></canvas>         
+            <div class="control-panel" id="controlPanel">
+                <header>
+                    <h1>Geometrická grafika</h1>
+                </header>
+                <label for="tileCount">Počet dlaždic:</label>
+                <select id="tileCount">
+                    <!-- Možnosti se generují dynamicky (viz JavaScript) -->
+                </select>
+
+                <!-- Kontejner pro miniatury dlaždic -->
+                <div id="tilesContainer"></div>
+                
+                <!-- Kontejner pro nastavení vybrané dlaždice -->
+                <div id="tileSettings">
+                    <h3>Nastavení dlaždice</h3>
+                    <div id="tilePreview" class="tile-preview"></div> <!-- Náhledový element -->
+                
+                    <input type="color" id="tileColor1" value="#ffffff"><br>
+                    
+                    <button id="setTile">Nastavit dlaždici</button>
+                </div>
+                <!-- Kontejner pro nastavení vykreslování dlaždic -->
+                <div id="drawSettings">
+                    <button id="drawTiles">Vykreslit dlaždice</button>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
