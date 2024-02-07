@@ -1,5 +1,5 @@
 export class Tile {
-    constructor(color = 'white') {
+    constructor(color = '#ffffff') {
         this.color = color;
     }
 
